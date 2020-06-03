@@ -52,12 +52,18 @@
     
     .main-title {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-title>div {
+        display: flex;
         justify-content: flex-start;
         align-items: center;
         padding: 15px 0;
     }
     
-    .main-title>h2 {
+    .main-title>div>h2 {
         font-weight: bold;
         margin: 0 10px 0 10px;
     }
@@ -226,6 +232,7 @@
         border-top: 1px solid silver;
         transition: 0.1s;
         cursor: pointer;
+        padding: 10px 0 10px 0;
     }
     
     .market>div:hover {
@@ -236,13 +243,46 @@
         color: white;
     }
     
-    .marget>h3 {
+    .marget h3 {
         font-weight: bold;
     }
     
     .market-block {
         width: 80%;
         margin: auto;
+    }
+    /* ________________________________________________________________________________ */
+    /* ________________________________________________________________________________ */
+    /* ________________________________________________________________________________ */
+    /* ________________________________________________________________________________ */
+    /* ____________________________next page (todays hot) */
+    
+    .todays-hot-card {
+        margin-bottom: 20px;
+    }
+    
+    .todays-hot-card>figure {
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+    }
+    
+    .todays-hot-card>figure>img {
+        width: 100%;
+    }
+    
+    .todays-hot-info {}
+    
+    .todays-hot-info>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .discount2 {
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: center !important;
     }
     /* ____________________________________________________________________________________ */
     /* ____________________________________________________________________________________base classes */
@@ -263,6 +303,18 @@
         font-size: 13px;
     }
     
+    .fz-12 {
+        font-size: 12px;
+    }
+    
     .dark-text-color {
         color: #031B40;
+    }
+    
+    .gray-text-color {
+        color: #909399;
+    }
+    
+    .discount-text-color {
+        color: #C93A5C;
     }
