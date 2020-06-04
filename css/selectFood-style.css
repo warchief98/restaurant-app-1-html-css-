@@ -1,0 +1,13 @@
+.header-pic {
+    position: relative;
+}
+
+.header-pic>img {
+    width: 100%;
+}
+
+.header-pic>figcaption {
+    position: absolute;
+    left: 15px;
+    top: 20%;
+}
